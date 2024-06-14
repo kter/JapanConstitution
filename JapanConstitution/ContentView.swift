@@ -1,24 +1,27 @@
-//
-//  ContentView.swift
-//  JapanConstitution
-//
-//  Created by 高橋智彦 on 2024/06/15.
-//
-
 import SwiftUI
+import WebKit
 
-struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+struct WebView: UIViewRepresentable {
+    let url: URL
+
+    func makeUIView(context: Context) -> WKWebView {
+        return WKWebView()
+    }
+
+    func updateUIView(_ uiView: WKWebView, context: Context) {
+        let request = URLRequest(url: url)
+        uiView.load(request)
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView: View {
+    var body: some View {
+        if let filePath = Bundle.main.path(forResource: "constitution", ofType: "html") {
+            let fileURL = URL(fileURLWithPath: filePath)
+            WebView(url: fileURL)
+                .edgesIgnoringSafeArea(.all)
+        } else {
+            Text("Constitution file not found")
+        }
+    }
 }

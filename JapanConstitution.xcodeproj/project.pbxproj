@@ -14,6 +14,7 @@
 		EC67C14E2C1CA3360048F337 /* JapanConstitutionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC67C14D2C1CA3360048F337 /* JapanConstitutionTests.swift */; };
 		EC67C1582C1CA3360048F337 /* JapanConstitutionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC67C1572C1CA3360048F337 /* JapanConstitutionUITests.swift */; };
 		EC67C15A2C1CA3360048F337 /* JapanConstitutionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC67C1592C1CA3360048F337 /* JapanConstitutionUITestsLaunchTests.swift */; };
+		EC67C1672C1CA36D0048F337 /* constitution.html in Resources */ = {isa = PBXBuildFile; fileRef = EC67C1662C1CA36D0048F337 /* constitution.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		EC67C1532C1CA3360048F337 /* JapanConstitutionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JapanConstitutionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC67C1572C1CA3360048F337 /* JapanConstitutionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapanConstitutionUITests.swift; sourceTree = "<group>"; };
 		EC67C1592C1CA3360048F337 /* JapanConstitutionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapanConstitutionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EC67C1662C1CA36D0048F337 /* constitution.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = constitution.html; sourceTree = "<group>"; };
+		EC67C1682C1CA4320048F337 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +97,12 @@
 		EC67C13B2C1CA3340048F337 /* JapanConstitution */ = {
 			isa = PBXGroup;
 			children = (
+				EC67C1682C1CA4320048F337 /* Info.plist */,
 				EC67C13C2C1CA3350048F337 /* JapanConstitutionApp.swift */,
 				EC67C13E2C1CA3350048F337 /* ContentView.swift */,
 				EC67C1402C1CA3360048F337 /* Assets.xcassets */,
 				EC67C1422C1CA3360048F337 /* Preview Content */,
+				EC67C1662C1CA36D0048F337 /* constitution.html */,
 			);
 			path = JapanConstitution;
 			sourceTree = "<group>";
@@ -231,6 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC67C1672C1CA36D0048F337 /* constitution.html in Resources */,
 				EC67C1442C1CA3360048F337 /* Preview Assets.xcassets in Resources */,
 				EC67C1412C1CA3360048F337 /* Assets.xcassets in Resources */,
 			);
@@ -424,6 +430,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"JapanConstitution/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JapanConstitution/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -452,6 +459,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"JapanConstitution/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JapanConstitution/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
