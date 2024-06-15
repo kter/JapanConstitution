@@ -16,7 +16,9 @@
 		EC67C15A2C1CA3360048F337 /* JapanConstitutionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC67C1592C1CA3360048F337 /* JapanConstitutionUITestsLaunchTests.swift */; };
 		EC67C16A2C1D20950048F337 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC67C1692C1D20950048F337 /* Models.swift */; };
 		EC67C16C2C1D20B80048F337 /* ConstitutionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC67C16B2C1D20B80048F337 /* ConstitutionData.swift */; };
-		EC67C16E2C1D211C0048F337 /* ArticleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC67C16D2C1D211C0048F337 /* ArticleDetailView.swift */; };
+		EC67C1722C1D32930048F337 /* ConstitutionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC67C1712C1D32930048F337 /* ConstitutionListView.swift */; };
+		EC67C1742C1D32A40048F337 /* ConstitutionFullTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC67C1732C1D32A40048F337 /* ConstitutionFullTextView.swift */; };
+		EC67C1762C1D4BFF0048F337 /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC67C1752C1D4BFF0048F337 /* PrivacyPolicyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +52,9 @@
 		EC67C1682C1CA4320048F337 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		EC67C1692C1D20950048F337 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		EC67C16B2C1D20B80048F337 /* ConstitutionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstitutionData.swift; sourceTree = "<group>"; };
-		EC67C16D2C1D211C0048F337 /* ArticleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailView.swift; sourceTree = "<group>"; };
+		EC67C1712C1D32930048F337 /* ConstitutionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstitutionListView.swift; sourceTree = "<group>"; };
+		EC67C1732C1D32A40048F337 /* ConstitutionFullTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstitutionFullTextView.swift; sourceTree = "<group>"; };
+		EC67C1752C1D4BFF0048F337 /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +112,9 @@
 				EC67C1422C1CA3360048F337 /* Preview Content */,
 				EC67C1692C1D20950048F337 /* Models.swift */,
 				EC67C16B2C1D20B80048F337 /* ConstitutionData.swift */,
-				EC67C16D2C1D211C0048F337 /* ArticleDetailView.swift */,
+				EC67C1712C1D32930048F337 /* ConstitutionListView.swift */,
+				EC67C1732C1D32A40048F337 /* ConstitutionFullTextView.swift */,
+				EC67C1752C1D4BFF0048F337 /* PrivacyPolicyView.swift */,
 			);
 			path = JapanConstitution;
 			sourceTree = "<group>";
@@ -269,9 +275,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC67C16A2C1D20950048F337 /* Models.swift in Sources */,
+				EC67C1762C1D4BFF0048F337 /* PrivacyPolicyView.swift in Sources */,
+				EC67C1742C1D32A40048F337 /* ConstitutionFullTextView.swift in Sources */,
+				EC67C1722C1D32930048F337 /* ConstitutionListView.swift in Sources */,
 				EC67C13F2C1CA3350048F337 /* ContentView.swift in Sources */,
 				EC67C16C2C1D20B80048F337 /* ConstitutionData.swift in Sources */,
-				EC67C16E2C1D211C0048F337 /* ArticleDetailView.swift in Sources */,
 				EC67C13D2C1CA3350048F337 /* JapanConstitutionApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

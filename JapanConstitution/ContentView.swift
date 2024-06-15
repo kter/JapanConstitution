@@ -2,19 +2,24 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(constitution) { chapter in
-                    Section(header: Text(chapter.title).font(.headline)) {
-                        ForEach(chapter.articles) { article in
-                            NavigationLink(destination: ArticleDetailView(article: article)) {
-                                Text(article.title)
-                            }
-                        }
-                    }
+        TabView {
+            ConstitutionListView()
+                .tabItem {
+                    Image(systemName: "list.bullet")
+                    Text("リスト表示")
                 }
-            }
-            .navigationTitle("日本国憲法")
+
+            ConstitutionFullTextView()
+                .tabItem {
+                    Image(systemName: "doc.text")
+                    Text("全文表示")
+                }
+
+            PrivacyPolicyView()
+                .tabItem {
+                    Image(systemName: "shield")
+                    Text("プライバシーポリシー")
+                }
         }
     }
 }
