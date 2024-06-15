@@ -3,11 +3,11 @@ import SwiftUI
 struct PrivacyPolicyView: View {
     var body: some View {
         VStack {
-            Text("プライバシーポリシー")
+            Text("このアプリについて")
                 .font(.largeTitle)
                 .padding()
 
-            Text("当アプリのプライバシーポリシーを以下のリンクからご確認ください。")
+            Text("当アプリのプライバシーポリシーは以下のリンクからご確認ください。")
                 .padding()
 
             Link("プライバシーポリシーを見る", destination: URL(string: "https://kter.github.io/JapanConstitution/privacypolicy")!)

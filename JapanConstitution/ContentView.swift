@@ -18,7 +18,7 @@ struct ContentView: View {
             PrivacyPolicyView()
                 .tabItem {
                     Image(systemName: "shield")
-                    Text("プライバシーポリシー")
+                    Text("このアプリについて")
                 }
         }
     }
